@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+
 import {
   CButton,
   CCard,
@@ -18,7 +20,7 @@ import CIcon from '@coreui/icons-react'
 
 const Login = () => {
   return (
-    <div className="c-app c-default-layout flex-row align-items-center">
+    <div className="c-app c-default-layout flex-row align-items-center" id="color">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="8">
@@ -26,7 +28,11 @@ const Login = () => {
               <CCard className="p-4">
                 <CCardBody>
                   <CForm>
+                    
                     <h1>Login</h1>
+                    
+                      
+                    
                     <p className="text-muted">Sign In to your account</p>
                     <CInputGroup className="mb-3">
                       <CInputGroupPrepend>
@@ -46,7 +52,8 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                        <CButton color="primary" className="px-4">Login</CButton>
+                        <CButton color="primary" className="px-4" Link to='/dashboard'>Login</CButton>
+                        {/* <//Route path="/dashboard" component={Dashboard} /> */}
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="link" className="px-0">Forgot password?</CButton>

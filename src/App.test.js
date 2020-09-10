@@ -3,12 +3,18 @@ import { shallow } from 'enzyme/build'
 import App from './App'
 import ChartLineSimple from './views/charts/ChartLineSimple'
 import Dashboard from './views/dashboard/Dashboard.js'
-
+import Login from './views/pages/login.js'
 
 it('mounts without crashing', () => {
   const wrapper = shallow(<App/>)
   wrapper.unmount()
 })
+
+it('mounts dashboard without crashing', () => {
+  const wrapper = shallow(<Login/>)
+  wrapper.unmount()
+})
+
 
 it('mounts dashboard without crashing', () => {
   const wrapper = shallow(<Dashboard/>)
