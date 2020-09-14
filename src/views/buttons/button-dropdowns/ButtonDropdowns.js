@@ -411,7 +411,7 @@ const ButtonDropdowns = () => {
                 </CForm>
                 <CDropdownDivider/>
                 <CDropdownItem to="/register" >Register</CDropdownItem>
-                <CDropdownItem>Forgot password?</CDropdownItem>
+                <CDropdownItem to="/forgot_Password">Forgot password?</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
 

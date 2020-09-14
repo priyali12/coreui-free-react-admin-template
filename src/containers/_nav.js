@@ -242,6 +242,12 @@ export default [
         name: 'Register',
         to: '/register',
       },
+      
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'forgot_Password',
+        to: '/forgot_Password',
+      },
       {
         _tag: 'CSidebarNavItem',
         name: 'Error 404',

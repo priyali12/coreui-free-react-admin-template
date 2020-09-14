@@ -56,7 +56,7 @@ const Login = () => {
                         {/* <//Route path="/dashboard" component={Dashboard} /> */}
                       </CCol>
                       <CCol xs="6" className="text-right">
-                        <CButton color="link" className="px-0">Forgot password?</CButton>
+                        <CButton color="link" className="px-0" Link to="/forgot_Password">Forgot password?</CButton>
                       </CCol>
                     </CRow>
                   </CForm>

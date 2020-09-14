@@ -25,8 +25,10 @@ const ButtonDropdowns = React.lazy(() => import('./views/buttons/button-dropdown
 const ButtonGroups = React.lazy(() => import('./views/buttons/button-groups/ButtonGroups'));
 const Buttons = React.lazy(() => import('./views/buttons/buttons/Buttons'));
 const Charts = React.lazy(() => import('./views/charts/Charts'));
-const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
-const Login=React.lazy(()=> import('./views/pages/login/Login'));
+//const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
+const DoctorDashboard = React.lazy(() => import('./views/dashboard/DoctorDashboard'));//doctor dasboard
+const Login=React.lazy(()=> import('./views/pages/login/Login'));//login
+const forgot_Password=React.lazy(()=> import('./views/pages/forgot_Password/forgot_Password'));
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
 const Brands = React.lazy(() => import('./views/icons/brands/Brands'));
@@ -42,7 +44,9 @@ const User = React.lazy(() => import('./views/users/User'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/login', name: 'Login', component: Login },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/forgot_Password', name: 'forgot_Password', component:forgot_Password },
+  // { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/dashboard', name: 'Dashboard', component: DoctorDashboard },//doctor dashboard
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
